@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    max-width: 900px; /* Puedes ajustar esto para limitar el ancho */
+    margin: 5em auto;
+    padding: 4em;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho de main */
+    background-color: black;
+    color: white; /* Para que el texto sea visible en el fondo negro */
+    padding: 3em;
+    border-radius: 8px;
+}
+
+section{
+    background-color: grey;
+    border-radius: 20px;
+    margin: 2em;
+}
+
+h1, h2, h3, p {
+    text-align: center; /* Alineación centrada del texto */
+}

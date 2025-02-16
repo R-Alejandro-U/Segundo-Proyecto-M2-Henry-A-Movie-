@@ -1,0 +1,67 @@
+/* Reset por completo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el tamaño total de los elementos */
+    font-weight: normal; /* Evita el uso de negritas por defecto */
+    font-size: 16px; /* Establece el tamaño de fuente uniforme para todo el texto */
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif; /* Define una fuente estándar */
+    font-size: 16px; /* Establece el tamaño de fuente base */
+    line-height: 1.5; /* Ajusta el espacio entre líneas */
+}
+
+img, picture, video, canvas, svg {
+    display: block; /* Asegura que las imágenes se comporten como bloques */
+    max-width: 100%; /* Evita que las imágenes excedan el tamaño del contenedor */
+}
+
+input, button, textarea, select {
+    font: inherit; /* Asegura que la tipografía coincida con la de los elementos parent */
+}
+
+a {
+    text-decoration: none; /* Elimina subrayados en los enlaces */
+    color: inherit; /* Mantiene el color del texto en los enlaces */
+}
+
+ul, ol {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+}
+
+table {
+    border-collapse: collapse; /* Colapsa los bordes de las tablas */
+    border-spacing: 0;
+}
+
+button, input, select, textarea {
+    background: none; /* Elimina fondos predeterminados */
+    border: none; /* Elimina bordes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    font: inherit; /* Hereda la tipografía del elemento padre */
+}
+
+textarea {
+    resize: none; /* Evita que se redimensione por defecto */
+}
+
+fieldset {
+    border: 0; /* Elimina el borde de los fieldsets */
+}
+
+blockquote, q {
+    quotes: none; /* Elimina las comillas predeterminadas */
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; /* Remueve el contenido adicional de las citas */
+}

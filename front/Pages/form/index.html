@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar una película</title>
+
+    <link rel="icon" href="/Assets/Img/logo.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark bg-gradient">
+    <header id="miHeader">
+        <div class="menu">
+            <img src="/Assets/Img/logo.jpg" alt="Logo" class="logo">
+            <nav>
+                <span><a href="/index.html">Inicio</a></span>
+                <span><a href="../Historia-del-cine.html">Historia del cine</a></span>
+                <span><a href="../A-Movie.html">¿Quienes somos?</a></span>
+                <span><a href="index.html">Agregar una película</a></span>
+            </nav>
+        </div>
+        <div class="name-web">
+            <h1>A_Movie</h1>
+        </div>
+    </header>
+
+    <main>
+        <form id="form">
+          <div class="bg-black bg-gradient border-0 rounded">
+            <fieldset class="p-5">
+              <div class="p-3 input-mediano border border-light-subtle rounded">
+                    <div class="orden">
+                      <label for="title">Título</label>
+                      <input type="text" id="title" placeholder="Ejem: Harry Potter y la piedra filosofal">
+                    </div>
+
+                    <div class="orden">
+                      <label for="year">Estreno</label>
+                      <input type="number" id="year" placeholder="Ejem: 2001" min="1895" max="">
+                    </div>
+              </div>
+
+              <div class="border border-light-subtle rounded">
+                    <div class="orden p-4 input-mediano">
+                      <label for="director">Director</label>
+                      <input type="text" id="director" placeholder="Ejem: Chris Columbus">
+                    </div>
+                    
+
+                    <div class="orden input-pequeño pe-5">
+                      <label for="duration_h">Duración (Horas)</label>
+                      <input type="number" id="duration_h" placeholder="Ejem: 2" min="1" max="5">
+
+                      <label for="duration_min">Duración (Minutos)</label>
+                      <input type="number" id="duration_min" placeholder="Ejem: 32" min="0" max="59">
+                    </div>
+              </div>
+              
+              <div class="Flex">
+                <div class="orden input-pequeño border border-light-subtle rounded">
+                  <label for="rate">Calificación</label>
+                  <input type="number" id="rate" step="0.1" min="0" max="10" placeholder="Ejem: 9.5">
+                </div>
+              </div>
+                  
+              <div class="orden input-grande border border-light-subtle rounded">
+                    <label for="poster">Póster</label>
+                    <input type="url" id="poster" placeholder="Ejem: https://poster-harry-potter-1">
+              </div>   
+
+              <div class="orden input-grande border border-light-subtle rounded">
+                      <label for="genres">Géneros cinematográficos</label>
+                      <input type="text" id="genres" list="list_genres" placeholder="Selecciona un género">  
+                      <datalist id="list_genres"></datalist>
+              </div>
+              <div id="containerGenres" class="border border-light-subtle rounded"></div>
+              <div class="button">
+                <button type="submit" id="button"  class="btn btn-outline-dark">Enviar</button>
+                <button type="reset" id="reset" class="btn btn-outline-dark">Refrescar</button>
+              </div>
+            </fieldset>
+          </div>
+        </form>
+    </main>
+
+    <footer>
+        <div id="foo">
+            <a href="#"><img src="/Assets/vsg/facebook-svgrepo-com.svg" alt="Facebook" class="redes"></a>
+            <a href="#"><img src="/Assets/vsg/instagram-svgrepo-com.svg" alt="Instagram" class="redes"></a>
+            <a href="#"><img src="/Assets/vsg/youtube-168-svgrepo-com.svg" alt="YouTube" class="redes"></a>
+        </div>
+    </footer>
+
+    <script src="/public/bundle.js"></script>
+</body>
+</html>
